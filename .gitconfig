@@ -1,0 +1,22 @@
+[color]
+	ui = true
+[push]
+	default = current
+[alias]
+	cho = checkout
+	new = checkout -B
+	delete = branch -D
+	rename = branch -m
+	pr = pull --rebase
+	fpush = push -u --force-with-lease origin HEAD
+	cp = cherry-pick
+[user]
+	name = Evgeniy Skuridin
+	email = redfield.ru@gmail.com
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[diff "sopsdiffer"]
+	textconv = sops -d
+[credential]
+	helper = store

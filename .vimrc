@@ -1,5 +1,4 @@
 set number
-set background=dark
 set hlsearch
 set incsearch
 set wildmenu
@@ -12,7 +11,6 @@ set visualbell
 
 syntax on
 filetype plugin indent on
-colorscheme pablo
 
 nmap <C-\> :NERDTreeToggle<CR>
 nmap <S-Up> :m-2<CR>

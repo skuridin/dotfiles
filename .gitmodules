@@ -16,3 +16,6 @@
 [submodule ".vim/pack/plugins/start/VimCompletesMe"]
 	path = .vim/pack/plugins/start/VimCompletesMe
 	url = https://github.com/ajh17/VimCompletesMe.git
+[submodule ".vim/pack/plugins/start/syntastic"]
+	path = .vim/pack/plugins/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git

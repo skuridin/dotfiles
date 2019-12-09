@@ -1,4 +1,4 @@
-set relativenumber
+set number
 set background=light
 set hlsearch
 set incsearch
@@ -11,7 +11,7 @@ set nocompatible
 
 syntax on
 filetype plugin indent on
-colorscheme solarized8_flat
+colorscheme peachpuff
 
 nmap <C-\> :NERDTreeToggle<CR>
 nmap <S-Up> :m-2<CR>

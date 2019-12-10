@@ -8,6 +8,7 @@ set nobackup
 set noswapfile
 set nocompatible
 set visualbell
+set completeopt-=preview
 
 syntax on
 filetype plugin indent on

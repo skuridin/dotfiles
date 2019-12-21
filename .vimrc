@@ -14,7 +14,7 @@ set background=light
 
 syntax on
 filetype plugin indent on
-colorscheme gruvbox
+colorscheme solarized8_flat
 
 nmap <C-\> :NERDTreeToggle<CR>
 nmap <S-Up> :m-2<CR>
@@ -31,6 +31,3 @@ let g:go_metalinter_autosave = 1
 
 " CtrlP
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-
-" Airline
-let g:airline_theme='gruvbox'

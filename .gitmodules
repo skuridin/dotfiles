@@ -25,3 +25,9 @@
 [submodule ".vim/pack/themes/opt/solarized8"]
 	path = .vim/pack/themes/opt/solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
+[submodule ".vim/pack/plugins/start/yajs"]
+	path = .vim/pack/plugins/start/yajs
+	url = https://github.com/othree/yajs.vim.git
+[submodule ".vim/pack/plugins/start/prettier"]
+	path = .vim/pack/plugins/start/prettier
+	url = https://github.com/prettier/vim-prettier.git

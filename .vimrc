@@ -28,6 +28,10 @@ nmap <right> <nop>
 " vim-go
 let g:go_auto_type_info = 1
 let g:go_metalinter_autosave = 1
+let g:go_version_warning = 0
 
 " CtrlP
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" Fix Vim background color in Kitty
+let &t_ut=''

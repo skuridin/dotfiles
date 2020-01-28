@@ -31,3 +31,6 @@
 [submodule ".vim/pack/plugins/start/prettier"]
 	path = .vim/pack/plugins/start/prettier
 	url = https://github.com/prettier/vim-prettier.git
+[submodule ".vim/pack/plugins/start/editorconfig"]
+	path = .vim/pack/plugins/start/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git

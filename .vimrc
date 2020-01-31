@@ -11,11 +11,10 @@ set nocompatible
 set visualbell
 set completeopt-=preview
 set termguicolors
-set background=light
+set background=dark
 
 syntax on
 filetype plugin indent on
-colorscheme solarized8_flat
 
 nmap <C-\> :NERDTreeToggle %<CR>
 nmap <S-Up> :m-2<CR>

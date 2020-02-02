@@ -10,11 +10,15 @@ set noswapfile
 set nocompatible
 set visualbell
 set completeopt-=preview
-set termguicolors
 set background=dark
 
 syntax on
 filetype plugin indent on
+colorscheme challenger_deep
+
+if has('nvim') || has('termguicolors')
+	set termguicolors
+endif
 
 nmap <C-\> :NERDTreeToggle %<CR>
 nmap <S-Up> :m-2<CR>
@@ -33,5 +37,9 @@ let g:go_version_warning = 0
 " CtrlP
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
-" Fix Vim background color in Kitty
-let &t_ut=''
+" Ale
+let g:ale_fixers = {
+			\ 'javascript': ['eslint', 'prettier'],
+			\ 'ruby': ['rubocop']
+			\}
+let g:ale_fix_on_save = 1

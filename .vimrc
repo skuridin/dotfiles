@@ -10,11 +10,9 @@ set noswapfile
 set nocompatible
 set visualbell
 set completeopt-=preview
-set background=dark
 
 syntax on
 filetype plugin indent on
-colorscheme challenger_deep
 
 if has('nvim') || has('termguicolors')
 	set termguicolors

@@ -20,7 +20,7 @@ if has('nvim') || has('termguicolors')
 	set termguicolors
 endif
 
-nmap <C-\> :NERDTreeToggle %<CR>
+nmap <C-\> :NERDTreeToggle<CR>
 nmap <S-Up> :m-2<CR>
 nmap <S-Down> :m+1<CR>
 nmap <esc><esc> :noh<CR>
@@ -34,12 +34,9 @@ let g:go_auto_type_info = 1
 let g:go_metalinter_autosave = 1
 let g:go_version_warning = 0
 
-" CtrlP
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-
 " Ale
-let g:ale_fixers = {
-			\ 'javascript': ['eslint', 'prettier'],
-			\ 'ruby': ['rubocop']
-			\}
 let g:ale_fix_on_save = 1
+
+" Fzf
+set rtp+=/usr/local/opt/fzf
+nmap <C-p> <plug>(fzf-maps-n)

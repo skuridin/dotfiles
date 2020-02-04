@@ -29,14 +29,10 @@ nmap <down> <nop>
 nmap <left> <nop>
 nmap <right> <nop>
 
-" vim-go
-let g:go_auto_type_info = 1
-let g:go_metalinter_autosave = 1
-let g:go_version_warning = 0
-
 " Ale
 let g:ale_fix_on_save = 1
 
 " Fzf
 set rtp+=/usr/local/opt/fzf
-nmap <C-p> <plug>(fzf-maps-n)
+nmap <C-p> :Files<CR>
+nmap <C-g> :GFiles?<CR>

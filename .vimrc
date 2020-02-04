@@ -14,10 +14,7 @@ set completeopt-=preview
 syntax on
 filetype plugin indent on
 
-if has('nvim') || has('termguicolors')
-	set termguicolors
-endif
-
+" Keys
 nmap <C-\> :NERDTreeToggle<CR>
 nmap <S-Up> :m-2<CR>
 nmap <S-Down> :m+1<CR>

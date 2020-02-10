@@ -13,6 +13,7 @@ set completeopt-=preview
 
 syntax on
 filetype plugin indent on
+colorscheme noctu
 
 " Keys
 nmap <C-\> :NERDTreeToggle<CR>

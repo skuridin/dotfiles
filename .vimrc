@@ -30,6 +30,7 @@ let g:ale_fix_on_save = 1
 
 " Fzf
 set rtp+=/usr/local/opt/fzf
+set rtp+=~/.fzf
 nmap <C-p> :Files<CR>
 nmap <C-g> :GFiles?<CR>
 

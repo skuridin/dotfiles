@@ -34,3 +34,6 @@
 [submodule ".vim/pack/themes/opt/vim-noctu"]
 	path = .vim/pack/themes/opt/vim-noctu
 	url = https://github.com/noahfrederick/vim-noctu.git
+[submodule ".vim/pack/plugins/start/supertab"]
+	path = .vim/pack/plugins/start/supertab
+	url = https://github.com/ervandew/supertab.git

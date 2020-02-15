@@ -38,6 +38,3 @@ nmap <C-g> :GFiles?<CR>
 highlight GitGutterAdd    ctermfg=2 ctermbg=0
 highlight GitGutterChange ctermfg=7 ctermbg=0
 highlight GitGutterDelete ctermfg=1 ctermbg=0
-
-" Airline
-let g:airline_powerline_fonts = 1

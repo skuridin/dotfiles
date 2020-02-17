@@ -10,10 +10,12 @@ set noswapfile
 set nocompatible
 set visualbell
 set completeopt-=preview
+set cursorline
 
 syntax on
 filetype plugin indent on
 colorscheme noctu
+highlight CursorLine ctermbg=236
 
 " Keys
 nmap <C-\> :NERDTreeToggle<CR>

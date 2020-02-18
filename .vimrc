@@ -16,6 +16,7 @@ syntax on
 filetype plugin indent on
 colorscheme noctu
 highlight CursorLine ctermbg=236
+highlight VertSplit ctermbg=8
 
 " Keys
 nmap <C-\> :NERDTreeToggle<CR>

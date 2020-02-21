@@ -31,9 +31,9 @@
 [submodule ".vim/pack/plugins/start/fzf"]
 	path = .vim/pack/plugins/start/fzf
 	url = https://github.com/junegunn/fzf.vim.git
-[submodule ".vim/pack/themes/opt/vim-noctu"]
-	path = .vim/pack/themes/opt/vim-noctu
-	url = https://github.com/noahfrederick/vim-noctu.git
 [submodule ".vim/pack/plugins/start/supertab"]
 	path = .vim/pack/plugins/start/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule ".vim/pack/themes/opt/vim-dim"]
+	path = .vim/pack/themes/opt/vim-dim
+	url = https://github.com/jeffkreeftmeijer/vim-dim.git

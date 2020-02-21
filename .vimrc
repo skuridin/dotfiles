@@ -14,9 +14,8 @@ set cursorline
 
 syntax on
 filetype plugin indent on
-colorscheme noctu
-highlight CursorLine ctermbg=236
-highlight VertSplit ctermbg=8
+colorscheme dim
+highlight CursorLine cterm=none ctermbg=236
 
 " Keys
 nmap <C-\> :NERDTreeToggle<CR>
@@ -38,9 +37,9 @@ nmap <C-p> :Files<CR>
 nmap <C-g> :GFiles?<CR>
 
 " GitGutter
-highlight GitGutterAdd    ctermfg=2 ctermbg=0
-highlight GitGutterChange ctermfg=7 ctermbg=0
-highlight GitGutterDelete ctermfg=1 ctermbg=0
+highlight GitGutterAdd    ctermfg=2
+highlight GitGutterChange ctermfg=7
+highlight GitGutterDelete ctermfg=1
 
 " NerdTree
 let NERDTreeQuitOnOpen = 1

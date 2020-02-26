@@ -10,12 +10,10 @@ set noswapfile
 set nocompatible
 set visualbell
 set completeopt-=preview
-set cursorline
 
 syntax on
 filetype plugin indent on
-colorscheme dim
-highlight CursorLine cterm=none ctermbg=236
+colorscheme default
 
 " Keys
 nmap <C-\> :NERDTreeToggle<CR>
@@ -36,12 +34,5 @@ set rtp+=~/.fzf
 nmap <C-p> :Files<CR>
 nmap <C-g> :GFiles?<CR>
 
-" GitGutter
-highlight GitGutterAdd    ctermfg=2
-highlight GitGutterChange ctermfg=7
-highlight GitGutterDelete ctermfg=1
-
 " NerdTree
 let NERDTreeQuitOnOpen = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1

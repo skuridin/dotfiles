@@ -17,6 +17,7 @@ colorscheme default
 
 " Keys
 nmap <C-\> :NERDTreeToggle<CR>
+nmap <leader>t :NERDTreeToggle %<CR>
 nmap <S-Up> :m-2<CR>
 nmap <S-Down> :m+1<CR>
 nmap <esc><esc> :noh<CR>

@@ -13,9 +13,6 @@
 [submodule ".vim/pack/plugins/start/fugitive"]
 	path = .vim/pack/plugins/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule ".vim/pack/plugins/start/yajs"]
-	path = .vim/pack/plugins/start/yajs
-	url = https://github.com/othree/yajs.vim.git
 [submodule ".vim/pack/plugins/start/editorconfig"]
 	path = .vim/pack/plugins/start/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
@@ -34,6 +31,6 @@
 [submodule ".vim/pack/plugins/start/supertab"]
 	path = .vim/pack/plugins/start/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule ".vim/pack/plugins/start/vim-jsx-pretty"]
-	path = .vim/pack/plugins/start/vim-jsx-pretty
-	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule ".vim/pack/plugins/start/vim-polyglot"]
+	path = .vim/pack/plugins/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git

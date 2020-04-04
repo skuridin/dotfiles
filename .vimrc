@@ -9,6 +9,7 @@ set nobackup
 set noswapfile
 set nocompatible
 set visualbell
+set completeopt=menu,menuone,preview,noselect,noinsert
 set completeopt-=preview
 
 syntax on
@@ -28,6 +29,10 @@ nmap <right> <nop>
 
 " Ale
 let g:ale_fix_on_save = 1
+let g:ale_set_highlights = 0
+let g:ale_completion_enabled = 1
+let g:ale_completion_tsserver_autoimport = 1
+set omnifunc=ale#completion#OmniFunc
 
 " Fzf
 set rtp+=/usr/local/opt/fzf

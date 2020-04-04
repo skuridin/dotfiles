@@ -42,3 +42,6 @@ nmap <C-g> :GFiles?<CR>
 
 " NerdTree
 let NERDTreeQuitOnOpen = 1
+
+" vim-closetag
+let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.js,*.html.erb,*.md,*.jsx,*.ts,*.tsx'

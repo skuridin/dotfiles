@@ -34,3 +34,6 @@
 [submodule ".vim/pack/plugins/start/vim-polyglot"]
 	path = .vim/pack/plugins/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
+[submodule ".vim/pack/plugins/start/vim-closetag"]
+	path = .vim/pack/plugins/start/vim-closetag
+	url = https://github.com/alvan/vim-closetag.git

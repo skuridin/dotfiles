@@ -16,7 +16,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-sleuth'
 call plug#end()
 
-syntax on
+syntax enable
 filetype plugin indent on
 colorscheme gruvbox
 
@@ -29,6 +29,7 @@ set nowritebackup
 set termguicolors
 set scrolloff=6
 set number relativenumber
+set numberwidth=6
 set cursorline
 set showmatch
 
@@ -54,6 +55,7 @@ let g:ale_completion_enabled = 1
 let g:ale_completion_tsserver_autoimport = 1
 let g:ale_completion_max_suggestions = 10
 set omnifunc=ale#completion#OmniFunc
+set completeopt=menu,menuone,preview,noselect,noinsert
 
 " Fzf
 let g:fzf_layout = { 'window': { 'width': 0.7, 'height': 0.6 } }

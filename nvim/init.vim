@@ -14,6 +14,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-sleuth'
+Plug 'lilydjwg/colorizer'
+Plug 'mhinz/vim-startify'
 call plug#end()
 
 syntax enable

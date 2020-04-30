@@ -1,3 +1,13 @@
+" Install vim-plug if missing
+let vim_plug_path = stdpath('data') . '/site/autoload/plug.vim'
+let vim_config_path = stdpath('config') . '/init.vim'
+if empty(glob(vim_plug_path))
+	silent exe '!curl -fLo ' . vim_plug_path . ' --create-dirs ' . 
+				\ 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+	exe 'source ' . vim_config_path
+	PlugInstall --sync
+endif
+
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'

@@ -77,3 +77,6 @@ let NERDTreeQuitOnOpen = 1
 
 " vim-closetag
 let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.js,*.html.erb,*.md,*.jsx,*.ts,*.tsx'
+
+" Startify
+let g:startify_change_to_dir = 0

@@ -9,23 +9,22 @@ if empty(glob(vim_plug_path))
 endif
 
 call plug#begin(stdpath('data') . '/plugged')
-Plug 'morhetz/gruvbox'
-Plug 'sheerun/vim-polyglot'
-Plug 'jiangmiao/auto-pairs'
-Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
+Plug 'dense-analysis/ale'
+Plug 'easymotion/vim-easymotion'
+Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'dense-analysis/ale'
-Plug 'tpope/vim-surround'
-Plug 'ervandew/supertab'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-sleuth'
-Plug 'lilydjwg/colorizer'
 Plug 'mhinz/vim-startify'
+Plug 'morhetz/gruvbox'
+Plug 'preservim/nerdtree'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-sleuth' " Detect indent
+Plug 'tpope/vim-surround'
 call plug#end()
 
 syntax enable
@@ -58,7 +57,8 @@ nnoremap <right> <nop>
 nnoremap <Leader>s :update<CR>
 nnoremap <C-p> :GFiles<CR>
 nnoremap <C-g> :GFiles?<CR>
-imap <c-x><c-f> <plug>(fzf-complete-path)
+nmap  <space> <Plug>(easymotion-bd-w)
+inoremap jj <esc>
 
 " Ale
 let g:ale_fix_on_save = 1

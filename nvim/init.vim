@@ -25,6 +25,7 @@ Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sleuth' " Detect indent
 Plug 'tpope/vim-surround'
+Plug 'matze/vim-move'
 call plug#end()
 
 syntax enable

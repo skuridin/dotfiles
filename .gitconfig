@@ -10,9 +10,11 @@
 	pr = pull --rebase
 	fpush = push -u --force-with-lease origin HEAD
 	cp = cherry-pick
+	l = log --oneline --graph --all
 [user]
 	name = Evgeniy Skuridin
 	email = redfield.ru@gmail.com
+	signingkey = F0146B519501E93D
 [core]
 	excludesfile = ~/.gitignore_global
 [diff "sopsdiffer"]
@@ -21,3 +23,5 @@
 	helper = store
 [pull]
 	rebase = true
+[commit]
+	gpgsign = true

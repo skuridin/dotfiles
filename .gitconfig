@@ -12,9 +12,8 @@
 	cp = cherry-pick
 	l = log --oneline --graph --all
 [user]
-	name = Evgeniy Skuridin
-	email = redfield.ru@gmail.com
-	signingkey = F0146B519501E93D
+	name = Eugene Skuridin
+	email = i@skurid.in
 [core]
 	excludesfile = ~/.gitignore_global
 [diff "sopsdiffer"]
@@ -23,5 +22,3 @@
 	helper = store
 [pull]
 	rebase = true
-[commit]
-	gpgsign = true

@@ -1,12 +1,15 @@
 [color]
-	ui = true
+	ui = auto
 [push]
 	default = current
 [alias]
 	cho = checkout
 	new = checkout -B
+	n = checkout -B
 	delete = branch -D
+	d = branch -D
 	rename = branch -m
+	am = commit --amend
 	pr = pull --rebase
 	fpush = push -u --force-with-lease origin HEAD
 	cp = cherry-pick
@@ -16,9 +19,18 @@
 	email = i@skurid.in
 [core]
 	excludesfile = ~/.gitignore_global
+	editor = code --wait
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
 [diff "sopsdiffer"]
 	textconv = sops -d
 [credential]
 	helper = store
-[pull]
-	rebase = true
+[init]
+	defaultBranch = main

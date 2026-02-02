@@ -15,19 +15,10 @@
 	cp = cherry-pick
 	l = log --oneline --graph --all
 [user]
-	name = Eugene Skuridin
+	name = Evgeniy Skuridin
 	email = i@skurid.in
 [core]
-	excludesfile = ~/.gitignore_global
-	editor = code --wait
-[diff]
-  tool = vscode
-[difftool "vscode"]
-  cmd = code --wait --diff $LOCAL $REMOTE
-[merge]
-  tool = vscode
-[mergetool "vscode"]
-  cmd = code --wait $MERGED
+	#excludesfile = ~/.gitignore_global
 [diff "sopsdiffer"]
 	textconv = sops -d
 [credential]

@@ -11,7 +11,10 @@ script = Path(__file__).with_name('tailscale-status.sh')
 with tempfile.TemporaryDirectory() as directory:
     bin_dir = Path(directory)
     for name in ('jq', 'timeout'):
-        (bin_dir / name).symlink_to(shutil.which(name))
+        path = shutil.which(name)
+        if path:
+            (bin_dir / name).symlink_to(path)
+    has_timeout = (bin_dir / 'timeout').exists()
     tailscale = bin_dir / 'tailscale'
     tailscale.write_text('''#!/bin/sh
 [ "$*" = "status --json" ] || exit 1
@@ -35,8 +38,10 @@ exit "$STATUS_EXIT"
         check(dict(status, BackendState=state), 'TS down')
     check(dict(status, TailscaleIPs=[]), 'TS down')
     check(status, 'TS down', STATUS_EXIT='1')
-    check(status, 'TS down', HANG='1')
+    if has_timeout:
+        check(status, 'TS down', HANG='1')
     check(None, 'TS down')
-    (bin_dir / 'timeout').unlink()
-    check(status, 'TS down')
+    if has_timeout:
+        (bin_dir / 'timeout').unlink()
+        check(status, 'TS down')
 print('Tailscale status checks passed')

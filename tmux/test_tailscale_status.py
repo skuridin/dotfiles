@@ -43,5 +43,6 @@ exit "$STATUS_EXIT"
     check(None, 'TS down')
     if has_timeout:
         (bin_dir / 'timeout').unlink()
-        check(status, 'TS down')
+        # timeout is optional: without it the script still reads status directly
+        check(status, 'TS 100.64.0.1')
 print('Tailscale status checks passed')
